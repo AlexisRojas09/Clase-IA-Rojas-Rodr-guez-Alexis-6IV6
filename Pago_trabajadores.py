@@ -39,10 +39,6 @@ def validar_datos(nombre, horas_normales_str, pago_hora_str, horas_extras_str, h
 
 
 def calcular_pago_trabajador(horas_normales, pago_hora, horas_extras, hijos):
-    """
-    Calcula el pago total de un trabajador.
-    Retorna pago_horas_normales, pago_horas_extras, bonificacion_hijos, pago_total.
-    """
     pago_horas_normales = horas_normales * pago_hora
     pago_horas_extras = horas_extras * (pago_hora * 1.5)
     bonificacion_hijos = hijos * 0.5

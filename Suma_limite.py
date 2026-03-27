@@ -35,7 +35,6 @@ def agregar_numero():
     lbl_suma.config(text=f"Suma parcial: {suma_total}", fg="green")
     lbl_msg.config(text="", fg="red")
 
-    # Verificar si se superó el límite
     if suma_total > LIMITE:
         finalizar_proceso()
         return
